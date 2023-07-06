@@ -13,7 +13,7 @@ def search_for_artist(token, artist_name):
         print(f"no artist with name of {artist_name} exists")
         return None
     
-    return json_res[0]['genres']
+    return json_res[0]
     
 token=token(client_id, client_secret)
 res = search_for_artist(token, "gary moore")
